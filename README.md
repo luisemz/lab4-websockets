@@ -27,7 +27,7 @@ NIA    | User name | Repo | Build Status | Improvement | Score
 647973 | PERALTA MARTÍNEZ, SANTIAGO 
 683546 | PÉREZ CANCER, BEATRIZ 
 686329 | ROIG JIMENEZ, ANA
-559207 | RUEDA MACÍAS, DANIEL 
+559207 | RUEDA MACÍAS, DANIEL| [test repo](https://github.com/danirueda/lab4-websockets/tree/test)| [![Build Status](https://travis-ci.org/danirueda/lab4-websockets.svg?branch=master)](https://travis-ci.org/danirueda/lab4-websockets) 
 610344 | SALUEÑA SEDILES, ASIER 
 680182 | SANZ ALCAINE, JORGE 
 534521 | SANZ VIDAL, AITOR 
