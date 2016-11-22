@@ -13,7 +13,7 @@ NIA    | User name | Repo | Build Status | Improvement | Score
 750846 | DAVID MOLINA, JOHN ALEXIS 
 529361 | DUMITRACHE , CATALIN  CONSTANTIN 
 535621 | FRÍAS ZAPATER, MARTA ALMUDENA | [test](https://github.com/martafr/lab4-websockets/tree/test) | [![Buid Status](https://travis-ci.org/martafr/lab4-websockets.svg?branch=test)](https://travis-ci.org/martafr/lab4-websockets)
-680669 | GUIU PÉREZ, ALEJANDRO 
+680669 | GUIU PÉREZ, ALEJANDRO | [test repo](https://github.com/aguiu/lab4-websockets/tree/test) | [![Build Status](https://travis-ci.org/aguiu/lab4-websockets.svg?branch=test)](https://travis-ci.org/aguiu/lab4-websockets) 
 682531 | JUAN CIRIACO, ÁLVARO | [test repo](https://github.com/aJuanCiri/lab4-websockets/tree/test) | [![Build Status](https://travis-ci.org/aJuanCiri/lab4-websockets.svg?branch=test)](https://travis-ci.org/aJuanCiri/lab4-websockets)
 544393 | LAHOZ EGEA, CRISTINA  | [test repo](https://github.com/cristinalahoz/lab4-websockets/tree/test) | [![Build Status](https://travis-ci.org/cristinalahoz/lab4-websockets.svg?branch=test)](https://travis-ci.org/cristinalahoz/lab4-websockets)
 622612 | MARTIN SEGURA, SERGIO  
