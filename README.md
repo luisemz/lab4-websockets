@@ -21,7 +21,7 @@ NIA    | User name | Repo | Build Status | Improvement | Score
 576307 | MARTÍNEZ PÉREZ, ADRIAN 
 540891 | MENENDEZ MOYA, FRANCISCO 
 680882 | MORENO JIMENO, RUBÉN | [test repo](https://github.com/nebur395/lab4-websockets/tree/test) | [![Build Status](https://travis-ci.org/nebur395/lab4-websockets.svg?branch=test)](https://travis-ci.org/nebur395/lab4-websockets) | Provide a HTML + JS client | :gift:
-750849 | MOSQUERA ZAPATA, LUIS EDUARDO 
+750849 | MOSQUERA ZAPATA, LUIS EDUARDO | [Test Repo](https://github.com/luisemz/lab4-websockets/tree/test) | [![Build Status](https://travis-ci.org/luisemz/lab4-websockets.svg?branch=test)](https://travis-ci.org/luisemz/lab4-websockets)
 650448 | MURILLO MAGDALENA, JAVIER 
 453948 | NAVARRO CLARAS, MARIO 
 647973 | PERALTA MARTÍNEZ, SANTIAGO 
