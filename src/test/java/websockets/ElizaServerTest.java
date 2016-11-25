@@ -53,17 +53,21 @@ public class ElizaServerTest {
 		assertEquals("The doctor is in.", list.get(0));
 	}
 
-	@Test(timeout = 1000)
-	@Ignore
+	@Test(timeout = 5000)
 	public void onChat() throws DeploymentException, IOException, URISyntaxException, InterruptedException {
-		// COMPLETE ME!!
+		
+		CountDownLatch latch = new CountDownLatch(5);
+		
 		List<String> list = new ArrayList<>();
 		ClientEndpointConfig configuration = ClientEndpointConfig.Builder.create().build();
 		ClientManager client = ClientManager.createClient();
-		client.connectToServer(new ElizaEndpointToComplete(list), configuration, new URI("ws://localhost:8025/websockets/eliza"));
-		// COMPLETE ME!!
-		// COMPLETE ME!!
-		// COMPLETE ME!!
+		Session session = client.connectToServer(new ElizaEndpointToComplete(list, latch), configuration, new URI("ws://localhost:8025/websockets/eliza"));
+		
+		session.getAsyncRemote().sendText("I maybe go to Switzerland");
+		latch.await();
+		
+		assertEquals(5, list.size());
+		assertEquals("You don't seem very certain.", list.get(3));
 	}
 
 	@After
@@ -92,9 +96,11 @@ public class ElizaServerTest {
     private static class ElizaEndpointToComplete extends Endpoint {
 
         private final List<String> list;
+        private final CountDownLatch latch;
 
-        ElizaEndpointToComplete(List<String> list) {
+        ElizaEndpointToComplete(List<String> list, CountDownLatch latch) {
             this.list = list;
+            this.latch = latch;
         }
 
         @Override
@@ -110,7 +116,7 @@ public class ElizaServerTest {
             @Override
             public void onMessage(String message) {
                 list.add(message);
-                // COMPLETE ME!!!
+                latch.countDown();
             }
         }
     }
